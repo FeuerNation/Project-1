@@ -1,20 +1,11 @@
 using UnityEngine;
 
-namespace ProjectAlpha.Scripts.Gameplay.Input {
 
-    public class PlayerController : MonoBehaviour
-    {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
+namespace ProjectAlpha.Scripts.Gameplay {
 
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
+  public class PlayerController : MonoBehaviour {
+
     }
+  }
 
-}
+
