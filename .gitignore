@@ -100,6 +100,8 @@ fabric.properties
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+#Developer Folder
+/[Aa]ssets/_[Dd]evelopers/*
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -162,6 +164,7 @@ sysinfo.txt
 
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
-/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+
 
 # End of https://www.toptal.com/developers/gitignore/api/unity,jetbrains+all
