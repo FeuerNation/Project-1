@@ -1,31 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class CoinPickup : MonoBehaviour
-{
 
-    public int Coins;
+namespace ProjectAlpha.Scripts.Gameplay {
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  public class CoinPickup : MonoBehaviour {
+    [SerializeField] private int _coins;
+
+
+
+    [SerializeField] private TextMeshProUGUI _coinText;
+
+
 
     private void OnTriggerEnter(Collider other) {
-        if (other.transform.tag =="Coin")
-        {
-            Destroy(other.gameObject);
-            Coins++;
-            print(Coins);
+      if (other.transform.CompareTag("Coin")) {
+        Destroy(other.gameObject);
+        _coins++;
+        // coinText should be in format of "x coins"
+        _coinText.text = $"{_coins} coins";
 
-        }
+
+      }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  }
+
 }
