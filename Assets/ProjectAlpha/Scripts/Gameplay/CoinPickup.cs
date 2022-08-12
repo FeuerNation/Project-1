@@ -1,5 +1,14 @@
+#region Info
+// -----------------------------------------------------------------------
+// CoinPickup.cs
+//
+// Felix Jung 12.08.2022
+// -----------------------------------------------------------------------
+#endregion
+#region
 using TMPro;
 using UnityEngine;
+#endregion
 
 
 namespace ProjectAlpha.Scripts.Gameplay {
@@ -21,9 +30,9 @@ namespace ProjectAlpha.Scripts.Gameplay {
         _coinText.text = $"{_coins} coins";
 
 
+
       }
     }
-
   }
 
 }
